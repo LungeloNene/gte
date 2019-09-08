@@ -1,0 +1,83 @@
+.woocommerce {
+
+    // Woocommerce Checkout page
+ 
+    &-input-wrapper {
+        width: 100%;
+    }
+
+    // Shop page
+    &-products-header__title {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    &-ordering {
+        select {
+            display: none;
+        }
+      } 
+
+    &-breadcrumb {
+        display: none;
+    }
+
+    &-loop-product__title {
+      color: $font-general;
+    }
+
+    &-terms-and-conditions-wrapper {
+      width: 100%;
+      border-radius: 1px;
+    }
+
+    // Donation product tile
+    .product_type_donation.btn {
+      margin-top: 25px;
+    }
+
+    //Product Page
+    &.single-product {
+      h2 {
+        clear: both;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .product {
+        margin-top: 50px;
+        &_title {
+          font-size: 40px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    // Donations product
+    .wc-donation-amount {
+      input {
+        display: block;
+      }
+    }
+
+    // Cart
+    &-message {
+      border-top-color: $brand-secondary;
+      &::before {
+        color: $brand-secondary;
+      }
+    }
+
+    &-cart .btn.btn-outline-primary, .btn-primary {
+      background: $brand-secondary !important;
+    }
+    
+    // Desktop specific styling
+    @media (min-width: $tablet) {}
+
+    // Mobile specific styling
+    @media (max-width: $tablet) {
+      &-error{
+        margin-top: 40px;
+      }
+    }
+}

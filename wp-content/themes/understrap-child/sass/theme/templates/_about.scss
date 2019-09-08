@@ -1,0 +1,23 @@
+.about {
+    // General styling
+    position: relative;
+    .hero {
+      &--subtitle, &--cta {
+        display: none;
+      }
+    }
+    // Desktop specific styling
+    @media (min-width: $tablet) {
+    }
+    
+      // Mobile specific styling
+      @media (max-width: $tablet) {
+        .hero-mini{
+          height: 300px;
+        }
+        .hero--title{
+          margin-top: $navigation-height;
+        }
+      }
+
+    }

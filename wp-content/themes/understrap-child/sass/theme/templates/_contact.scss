@@ -1,0 +1,33 @@
+.contact {
+  // General styling
+  iframe{
+    width: 100%;
+  }
+  input.wpcf7-form-control.wpcf7-submit.btn.btn_default{
+    background-color: $brand-primary !important;
+    float: left;
+    color: white;
+    margin-top: 30px;
+  }
+
+  .hero {
+    &--subtitle, &--cta {
+      display: none;
+    }
+
+  }
+  // Desktop specific styling
+  @media (min-width: $tablet) {
+  }
+  
+    // Mobile specific styling
+    @media (max-width: $tablet) {
+      iframe{
+        margin-bottom: 30px;
+      }
+      .form{
+        order: 2;
+        margin-top: 30px;
+      }
+    }
+  }

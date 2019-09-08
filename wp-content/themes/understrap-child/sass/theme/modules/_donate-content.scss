@@ -1,0 +1,17 @@
+.donate-content {
+    // General Styling
+&.wrapper {
+    padding-top: 0;
+}
+        // Desktop specific styling
+    @media (min-width: $tablet) {
+        .bank-details {
+        //
+        }
+    }
+    
+      // Mobile specific styling
+      @media (max-width: $tablet) {
+
+      }
+    }

@@ -1,0 +1,88 @@
+.signup{
+    // General styling
+    color: rgba(22, 63, 86, 1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-left: 0;
+    overflow: hidden;
+    .blur{
+        $image: '/wp-content/themes/understrap-child/img/tamarcus-brown-131428-unsplash.png';
+        @include gaussian-blur($image,4px,rgba(255, 255, 255, 0.5));
+      }
+    .flex-direction{
+        flex-direction: column;
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    .input-fields{
+        margin: 15px 0px;
+        input{
+            border: 2px solid #163F56;
+            border-radius: 3px;
+            padding: 5px;
+            background: transparent;
+            font-size: 14px;
+        }
+    }
+    .btn_primary {
+        display: block;
+        margin: auto;
+    }
+    &-heading{
+        font-size: 36px;
+        text-align: center;
+    }
+      ::placeholder, {
+        color: #163F56 !important;
+        font-style: italic;
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: 400;
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #163F56 !important;
+        font-style: italic;
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: 400;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #163F56 !important;
+        font-style: italic;
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: 400;
+      }
+
+    // Desktop specific styling
+   @media (min-width: $tablet) {
+    .input-fields{
+        margin: 15px 0;
+        display: flex;
+        justify-content: center;
+        input{
+            margin-left: 5px;
+            width: 250px;
+        }
+    }
+   }
+ 
+   // Mobile specific styling
+   @media (max-width: $tablet) {
+    &-heading{
+        font-size: 25px;
+        margin-bottom: 20px;
+        }
+       .input-fields{
+           text-align: center;
+           input{
+               margin-bottom: 15px;
+               width: 100%;
+           }
+       }
+   }
+}

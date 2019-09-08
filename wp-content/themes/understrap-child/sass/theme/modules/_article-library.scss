@@ -1,0 +1,103 @@
+.article-library {
+    // General styling
+    background-color: #F5F5F5;
+    margin-top: 60px;
+    padding-bottom: 80px;
+    .btn_tertiary{
+        background: transparent;
+        border: 2px solid #FFFFFF;
+        color: #FFFFFF;
+        border-radius: 3px;
+        line-height: 1;
+        padding: 6px 25px;
+    }
+
+    h6 {
+        color: #444444;
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 45px;
+        margin-top: 60px;
+    }
+
+    .library-post-card {
+        border: 1px solid #CCCCCC;
+        width: 619.66px;
+        border-radius: 10px !important;
+        margin: 15px 0px;
+        cursor: pointer;
+        overflow: hidden;
+
+        .blur {
+            $image: '/wp-content/themes/understrap-child/img/tamarcus-brown-131428-unsplash.png';
+            @include gaussian-blur($image, 4px, rgba(22, 63, 86, 0.46));
+        }
+
+        &:hover {
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+        }
+
+        .text {
+            width: 100%;
+            padding-left: 30px
+        }
+
+        &-header {
+
+
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 101.53px;
+            position: relative;
+
+            h5 {
+                color: #FFFFFF;
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            em {
+                color: #5CD0E2;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+
+        &-body {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            p {
+                color: #BEBEBE;
+                font-size: 14px;
+            }
+
+            .post-date {
+                color: #444444;
+                font-size: 12px;
+            }
+        }
+    }
+
+    // Desktop specific styling
+    @media (min-width: $tablet) {}
+
+    // Mobile specific styling
+    @media (max-width: $tablet) {
+        .library-post-card {
+            margin-left: 15px;
+            margin-right: 15px;
+            text-align: center !important;
+
+            &-header {
+                height: 175.53px;
+            }
+
+            .btn {
+                margin-top: 15px;
+            }
+        }
+    }
+}

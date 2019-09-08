@@ -1,0 +1,20 @@
+
+@mixin cover($dimension) {
+    height: $dimension;
+    width: $dimension;
+    position: absolute;
+  }
+  
+@mixin gaussian-blur($image,$blur,$colour) {
+    @include cover(100%);
+        background-image: url($image);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0 0 0 1000px $colour;
+        filter: blur($blur);
+        -webkit-filter: blur($blur);
+        -moz-filter: blur($blur);
+        -o-filter: blur($blur);
+        -ms-filter: blur($blur);
+      }

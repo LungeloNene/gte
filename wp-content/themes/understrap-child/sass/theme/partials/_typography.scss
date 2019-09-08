@@ -1,0 +1,62 @@
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  font-size: 15px;
+  color: $brand-secondary;
+  transition: color .2s;
+  &:hover {
+    text-decoration: none;
+    color: $brand-darker;
+  }
+}
+
+
+// Desktop specific styling
+@media (min-width: $tablet) {}
+
+// Mobile specific styling
+@media (max-width: $tablet) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}

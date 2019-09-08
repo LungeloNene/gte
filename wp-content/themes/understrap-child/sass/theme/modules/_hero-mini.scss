@@ -1,0 +1,44 @@
+.hero-mini {
+// General styling
+&.hero--default-colour {
+  background: $brand-darker !important;
+}
+  text-align: center;
+  height: 350px;
+  .hero--title {
+    font-size: 50px;
+    margin: 30px 0 0;
+    font-weight: 500;
+  }
+  .hero--subtitle {
+    font-size: 24px;
+  }
+  .wrapper {
+    margin-top: 0;
+  }
+
+  // Desktop specific styling
+@media (min-width: $tablet) {
+}
+
+  // Mobile specific styling
+  @media (max-width: $tablet) {
+    height: 250px;
+    .hero--title {
+      font-size: 30px;
+      
+    }
+    .hero--subtitle {
+      font-size: 18px;
+    }
+    h2, h5 {
+      font-size: 20px;
+    }
+    .zapper {
+      margin-top: 30px;
+    }
+    .bank-details h5 {
+      margin-bottom: 30px;
+    }
+  }
+}

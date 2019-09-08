@@ -1,0 +1,139 @@
+.post{
+    position: relative;
+    color: #333333;
+    &-content{
+        padding-bottom: 60px;
+        .container{
+            max-width: 650px;
+        }
+    }
+    &-title{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    &-card{
+        border-radius: 10px;
+        
+        .wysiwyg{
+            h3{
+                font-size: 36px;
+            }
+            h2{
+                font-size: 22px;
+            }
+            p{
+                margin-bottom: 15px; 
+                font-size: 14px;
+            }
+            img{
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            iframe{
+                width: 100%;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+        .btn {
+            margin-top: 15px;
+        }
+        
+        .hero--subtitle{
+            padding: 5px 30px;
+            margin-bottom: 0px;
+            font-size: 30px;
+            font-style: italic;
+            border-radius: 3px;
+            color: #FFF;
+        }
+        &.modal-dialog{
+            max-width: 1140px !important;
+            pointer-events: unset !important;
+        }
+        background-color: #fff;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        p{
+            margin-bottom: 15px;
+        }
+
+        .col-wrapper{
+            margin: 30px 0px;
+        }
+        .line{
+            hr{
+                border: 2px solid;
+                width: 100px;
+            }
+        }
+    }
+            .back{
+            color: #ffffff;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 33px;
+            cursor: pointer;
+            z-index: 4;
+        }
+    &-hero{
+        height: 253px;
+        border-top-left-radius: 11px;
+        border-top-right-radius: 11px;
+    }
+    .contribute-color{
+        color: #626262;
+    }
+    .author{
+        &-img{
+            width: 126.18px;
+            height: 126.18px;
+            border: 2px solid #FFF;
+            border-radius: 50%;
+            position: absolute;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: -102px;
+        }
+        &-name{
+            font-style: italic;
+        }
+    }
+        // Desktop specific styling
+   @media (min-width: $tablet) {}
+ 
+   // Mobile specific styling
+   @media (max-width: $tablet) {
+       .author-img{
+           top: -88px;
+       }
+       &-card{
+           .col-wrapper{
+               margin: 15px 0px 
+           }
+           .back{
+            left: 25px !important;
+            top: 6px !important; 
+           }
+       }
+    &-title{
+        font-size: 25px;
+    }
+    &-content{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+   }
+}
+
+#single-wrapper{
+    background-color: #EEEEEE;
+    position: relative;
+    .blur {
+        $image: '/wp-content/themes/understrap-child/img/tamarcus-brown-131428-unsplash.png';
+        @include gaussian-blur($image, 4px, rgba(238, 238, 238, 0.9));
+    }
+}

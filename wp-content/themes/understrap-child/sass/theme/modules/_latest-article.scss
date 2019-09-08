@@ -1,0 +1,98 @@
+.latest-article{
+    // General styling
+     background-color: #FFFFFF;
+     margin-top: 120px;
+     margin-bottom: 60px;
+     h6{
+         color: #444444;
+         font-size: 36px;
+         font-weight: 400;
+         margin-bottom: 60px;
+     }
+     .latest-post-card{
+         width: 938.89px;
+         border: 1px solid #CCCCCC;
+         border-radius: 10px;
+         cursor: pointer;
+         &:hover{
+            box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+         }
+         &-header{
+            height: 196.16px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            .post-date{
+                border: 2px solid #FFFFFF;
+                border-radius: 3px;
+                color: #FFFFFF;
+                min-width: 187px;
+                background: rgba(0,0,0,0.42);
+                em{
+                    font-size: 18px;
+                }
+            }
+         }
+         &-body{
+             padding: 15px 30px;
+             background-color: #FFFFFF;
+             p{
+                font-size: 16px;
+                color: #ADACAC
+             }
+             .post-title{
+                color: #163f56;
+                font-size: 32px;
+                font-weight: 500;
+                margin-bottom: 30px;
+             }
+         }
+         &-footer{
+            padding: 30px;
+            .btn{
+                border-radius: 3px !important;
+                box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+            }
+            .author{
+                &-name{
+                        color: #9F9898;
+                        font-size: 15px;
+                        font-style: italic;
+                        margin-left: 30px;
+                    
+                }
+                &-image{
+                   min-width: 73.58px;
+                   min-height: 73.58px;
+                   border-radius: 50%;
+                   background-position: center;
+                   background-size: cover;
+                   background-repeat: no-repeat;
+                }
+            }
+         }
+     }
+   // Desktop specific styling
+   @media (min-width: $tablet) {
+        
+   }
+ 
+   // Mobile specific styling
+   @media (max-width: $tablet) {
+    margin-left: 30px;
+    margin-right: 30px;
+    .latest-post-card{
+        &-body{
+
+            text-align: center;
+        }
+        &-footer{
+            .btn_secondary{
+                justify-content: center !important;
+            }
+        }
+    }
+   }
+}

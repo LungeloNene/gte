@@ -1,0 +1,43 @@
+.about-us-content {
+    // General Styling
+    font-size: 14px;
+    text-align: center;
+    h4 {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 36px;
+    }
+    .our {
+        &-story {
+            padding: 100px 0;
+        }
+        &-vision {
+            color: #ffffff;
+            padding: 100px 0;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+
+        // Desktop specific styling
+    @media (min-width: $tablet) {
+
+    }
+    
+      // Mobile specific styling
+      @media (max-width: $tablet) {
+        .our {
+            &-story {
+                padding: 45px 30px;
+            }
+            &-vision {
+                padding: 45px 30px;
+                background-image: url("/wp-content/themes/understrap-child/img/Mobile - Our Vision.jpg");
+            }
+        }
+        h4 {
+            font-size: 22px;
+          }
+      }
+    }

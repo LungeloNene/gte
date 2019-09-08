@@ -1,0 +1,88 @@
+.blog-mini {
+    height: 549px;
+    position: relative;
+    overflow: hidden;
+
+    .flex-direction {
+        flex-direction: column;
+    }
+
+    .blur {
+        $image: '/wp-content/themes/understrap-child/img/tamarcus-brown-131428-unsplash.png';
+        @include gaussian-blur($image, 4px, rgba(22, 63, 86, 0.66));
+    }
+
+    .author-name {
+        font-size: 12px;
+        font-weight: 500;
+        color: #5CD0E2;
+        margin-top: 15px;
+    }
+
+    .date {
+        font-size: 11px;
+        font-weight: 400;
+        color: #5CD0E2;
+    }
+
+    .dash {
+        color: #5CD0E2;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    &-post-img {
+        width: 173px;
+        height: 173px;
+        border-radius: 50%;
+        border: 2px solid #FFFFFF;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    &-excerpt {
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+
+    &-content {
+        color: #FFFFFF;
+
+        .btn_tertiary {
+            background: transparent;
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+            margin-right: 30px;
+            border-radius: 3px;
+            line-height: 1;
+            padding: 6px 25px;
+        }
+    }
+
+    // Desktop specific styling
+    @media (min-width: $tablet) {}
+
+    // Mobile specific styling
+    @media (max-width: $tablet) {
+        height: 725px;
+        &-title{
+            text-align: center;
+        }
+        &-content{
+            padding: 5px 15px !important;
+            .read-more{
+                float: left;
+            }
+            .full-bog{
+                margin-right: 0px;
+                float: right;
+            }
+        }
+    }
+}

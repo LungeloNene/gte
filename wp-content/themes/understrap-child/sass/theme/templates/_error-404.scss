@@ -1,0 +1,17 @@
+.error-404 {
+// General styling
+.hero {
+  height: 250px;
+}
+
+// Desktop specific styling
+@media (min-width: $tablet) {
+}
+
+  // Mobile specific styling
+  @media (max-width: $tablet) {
+    .hero {
+      height: 200px;
+    }
+  }
+}

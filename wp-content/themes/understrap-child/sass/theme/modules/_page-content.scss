@@ -1,0 +1,52 @@
+.page-content {
+
+// General styling
+&.wrapper {
+  padding: 0;
+    margin: 0;
+  }
+  h2, p {
+    margin-bottom: $margin-small;
+  }
+  
+  // Desktop specific styling
+  @media (min-width: $tablet) {
+    &--text {
+      padding: $padding-medium;
+      max-width: calc(1140px/2);
+      &:nth-of-type(odd) {
+        margin-left: calc(50% - #{$col});
+      }
+    }
+    &--image {
+      h2 {
+        display: none;
+      }
+      background-position: 100% 50%;
+      &:nth-of-type(odd) {
+        background-position: 0 50%;
+      }
+    }
+  }
+
+  // Mobile specific styling
+  @media (max-width: $tablet) {
+    &--image {
+      height: 300px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      order: 0;
+      h2 {
+        text-align: center;
+      }
+    }
+    &--text {
+        padding: $padding-small;
+        order: 1;
+      h2 {
+        display: none;
+      }
+    }
+  }
+}

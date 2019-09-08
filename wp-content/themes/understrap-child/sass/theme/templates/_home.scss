@@ -1,0 +1,31 @@
+.home {
+  #page-wrapper {
+    padding: 0;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  // Hide default button borders on hero. 
+  .hero {
+    &--cta {
+      &:hover {
+        border: 1px solid transparent;
+      }
+    }
+  }
+
+        // Desktop specific styling
+        @media (min-width: $tablet) {
+        }
+        
+          // Mobile specific styling
+          @media (max-width: $tablet) {
+              h4{
+                font-size: 22px !important;
+              }
+          }
+
+}

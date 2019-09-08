@@ -1,0 +1,41 @@
+.card-bin {
+    // General Styling
+
+        background-color: #F5F5F5;
+        h4{
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 36px;
+        }
+        a {
+            margin-top: 30px;
+        }
+        .card {
+            border-radius: 10px;
+            width: 20rem;
+            margin: auto;
+            box-shadow: 1px 1px 4px 1px rgba(0,0,0,.1);
+            transition: box-shadow .2s ease-in-out;
+            &:hover {
+                box-shadow: 1px 1px 6px 3px rgba(0,0,0,.1);
+            }
+            &-title{
+                color: #444444;
+                font-size: 22px;
+            }
+            &-text{
+                color: #CCCCCC;
+                font-size: 12px;
+            }
+        }
+        // Desktop specific styling
+    @media (min-width: $tablet) {
+    }
+    
+      // Mobile specific styling
+      @media (max-width: $tablet) {
+          .card{
+              width: 100% !important;
+          }
+      }
+    }

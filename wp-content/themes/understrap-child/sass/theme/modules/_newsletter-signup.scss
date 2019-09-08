@@ -1,0 +1,93 @@
+.newsletter-signup {
+// General styling
+background: $brand-primary;
+color: white;
+height: 93px;
+padding: $small;
+.mc4wp-response{
+  position: relative;
+  color: black;
+  bottom: 100px;
+}
+text-align: center;
+&--text {
+  span {
+    font-size: 18px;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    color: #444444;
+    font-weight: 500;
+  }
+}
+&--input {
+  input {
+    width: calc(100% - #{$newsletter-signup--submit});
+    height: 100%;
+    border: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  input[type="submit"] {
+    width: $newsletter-signup--submit;
+    background-color: #163F56;
+    float: left;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+}
+  
+  // Desktop specific styling
+  @media (min-width: $tablet) {
+    &--text {
+
+    }
+    &--input{
+      input[type="submit"]{
+        width: 100px;
+      }
+    }
+  }
+
+  // Mobile specific styling
+  @media (max-width: $tablet) {
+    height: 130px;
+    .newsletter-signup--input input[type=submit]{
+      left: -10px;
+      position: relative;
+    }
+    .mc4wp-response{
+      bottom: 140px;
+    }
+    input[type="submit"]{
+      width: 100px;
+    }
+    &--text {
+      span {
+        font-size: 15px;      
+        margin-bottom: 1em;
+        display: block;
+      }
+    }
+    &--input {
+      input{
+        width: 188px;
+      }
+      button{
+        width: 87px;
+      }
+      input::-webkit-input-placeholder {
+        text-align: left;
+      }
+      input::-moz-placeholder {
+        text-align: left;
+      }
+      input:-moz-placeholder {
+        text-align: left;
+      }
+      input:-ms-input-placeholder {
+        text-align: left;
+      }
+    } 
+  }
+}

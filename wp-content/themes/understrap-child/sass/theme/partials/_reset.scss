@@ -1,0 +1,38 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  &:visited {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+button,
+a {
+  &:active {
+    outline: none;
+  }
+  &:hover {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+// for WPCF7 submit buttons
+.wpcf7 {
+  input[type=submit] {
+    width: auto;
+  }
+}

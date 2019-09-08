@@ -1,0 +1,73 @@
+.jumplinks {
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+  font-size: 20px;
+  background-color: #5CD0E2;
+  a{
+    color: #FFFFFF;
+    border-right: none !important;
+    border-left: none !important;
+  }
+  &.wrapper {
+    margin: 0;
+    margin-top: -1px;
+    padding: 0;
+  }
+  .col {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  &--jumplink {
+    padding: 10px;
+    transition: all .2s;
+    font-weight: 400;
+    color: $font-general;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    text-align: center;
+    min-width: 150px;
+    &:hover {
+     background: $brand-secondary;
+     color: white;
+    }
+
+      &:nth-child(even) {
+          border-left: 1px solid rgba(0,0,0,.2);
+          border-right: 1px solid rgba(0,0,0,.2);
+      }
+
+    @media (max-width: $tablet) {
+      min-width: 33.3%;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      background: $brand-secondary;
+    }
+  }
+  &--label {
+    pointer-events: none;
+    margin: 0 auto 0 0;
+    opacity: .7;
+    background: transparent !important;
+    color: $font-general !important;
+    &:hover {
+      background: transparent !important;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  @media (min-width: $tablet) {
+    &.mobile{
+      display: none;
+    }
+  }
+  @media (max-width: $tablet) {
+    &.desktop{
+      display: none;
+    }
+  }
+}

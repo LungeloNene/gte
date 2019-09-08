@@ -1,0 +1,157 @@
+.modal {
+    // General Styling
+    .space{
+        padding-top: 30px;
+    }
+    .d-block{
+        margin: auto;
+    }
+    p{
+        font-size: 14px;
+    }
+    .fa, .fas{
+        font-size: 60px;
+        color: #163F56;
+    }
+    .donate{
+        background-color: #163F56;
+        border: 1px solid #163F56;
+        color: #FFFFFF;
+        border-radius: 3px;
+        margin: 30px auto 0;
+        padding: 10px 45px;
+        width: fit-content;
+        display: block;
+    }
+    h5{
+        margin-bottom: 22px;
+        text-align: center;
+        font-size: 22px;
+    }
+    h4{
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+    .carousel {
+        margin: 30px -75px;
+        &-inner {
+            max-height: 500px;
+        }
+    }
+        &-header{
+            background-image: url("/wp-content/themes/understrap-child/img/modal.png");
+            
+        }
+        &-body{
+        }
+        
+        
+        i.fas.fa-chevron{
+            &-right{
+                width: 50px;
+                height: 50px;
+                color: #163f56;
+                border-radius: 25px;
+                font-size: 26px;
+                background: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &-left{
+                width: 50px;
+                height: 50px;
+                color: #163f56;
+                border-radius: 25px;
+                font-size: 26px;
+                background: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    .close {
+        position: absolute;
+        right: 15px;
+        font-size: 60px;
+        color: white;
+        opacity: .8;
+        text-shadow: 1px 1px 6px rgba(0,0,0,.1);
+        &:hover {
+          text-shadow: 1px 1px 8px rgba(0,0,0,.1);
+          color: white !important;
+          opacity: 1;
+        }
+      }
+
+        // Desktop specific styling
+    @media (min-width: $tablet) {
+        &-header{
+            height: 400px;
+        }
+        &-dialog{
+            max-width: 900px !important;
+        }
+        &-title{
+            margin: auto;
+            font-weight: 500;
+            font-size: 50px;
+            color: #ffffff;
+            margin-left: 34%;
+            text-shadow: 1px 1px 6px rgba(0,0,0,.1);
+        }
+    }
+    
+      // Mobile specific styling
+      @media (max-width: $tablet) {
+        &-header{
+            height: 250px;
+        }
+        &-title{
+            margin: auto;
+            margin-left: 50px;
+            color: #fff;
+            font-weight: 500;
+        }
+        .donate{
+            margin-left: 27%;
+        }
+        &-body{
+            padding: 0px;
+            h4{
+                margin-top: 30px;
+            }
+            iframe {
+                margin-top: 30px;
+            }
+            .carousel {
+                padding: 0;
+                margin: 0 -15px;
+            }
+            i.fas.fa-chevron{
+                &-right{
+                    width: 30px;
+                    height: 30px;
+                    color: #163f56;
+                    border-radius: 15px;
+                    font-size: 20px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &-left{
+                    width: 30px;
+                    height: 30px;
+                    color: #163f56;
+                    border-radius: 15px;
+                    font-size: 20px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+      }
+    }

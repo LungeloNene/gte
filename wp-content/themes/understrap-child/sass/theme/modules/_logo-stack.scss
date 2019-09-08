@@ -1,0 +1,23 @@
+.logo-stack {
+    // General Styling
+    h4{
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 36px;
+    }
+    img{
+        width: 181px;
+        height: 180.41px;
+        padding: 20px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+
+        // Desktop specific styling
+    @media (min-width: $tablet) {
+    }
+    
+      // Mobile specific styling
+      @media (max-width: $tablet) {
+      }
+    }

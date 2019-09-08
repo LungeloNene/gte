@@ -1,0 +1,45 @@
+.accordion {
+    // General Styling
+    .card{
+        border: 0;
+        &-header{
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        background-color: #FFFFFF;
+        padding: 25px;
+        }
+        &-body{
+            box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+            padding: 30px;
+            margin-bottom: 60px !important;
+        }
+    }
+    .fa {
+        float: right;
+        margin: auto;
+        top: 3px;
+        position: relative;
+    }
+    h4{
+        margin-bottom: 63px;
+        text-align: center;
+        font-size: 36px;
+    }
+    h5{
+        color: #163F56;
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+        // Desktop specific styling
+    @media (min-width: $tablet) {
+    }
+    
+      // Mobile specific styling
+      @media (max-width: $tablet) {
+          h4{
+              font-size: 22px;
+          }
+          h5{
+              font-size: 16px;
+          }
+      }
+    }

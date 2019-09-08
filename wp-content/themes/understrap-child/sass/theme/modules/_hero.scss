@@ -1,0 +1,42 @@
+.hero {
+// General Styling
+//background-image: url(images/bg_7.jpg);
+background-position: 50% -25px;
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+height: calc(100vh - 117px);
+min-height: 700px;
+position: relative;
+&-content{
+  h2{
+    opacity: 0.545143;
+    transform: translateZ(0px) translateY(8.52857%);
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  p{
+    opacity: 0.545143;
+    transform: translateZ(0px) translateY(8.52857%);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+    // Desktop specific styling
+@media (min-width: $tablet) {
+}
+
+  // Mobile specific styling
+  @media (max-width: $tablet) {
+    &-content{
+      h2{
+        font-size: 40px;
+      }
+    }
+  }
+}

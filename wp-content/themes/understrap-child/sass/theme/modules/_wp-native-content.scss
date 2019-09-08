@@ -1,0 +1,23 @@
+.wp-native-content {
+&.wrapper {
+  padding-bottom: 0;
+}
+  h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 60px;
+    a {
+      color: $brand-primary;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+  }
+
+    // Desktop specific styling
+    @media (min-width: $tablet) {}
+
+    // Mobile specific styling
+    @media (max-width: $tablet) {}
+}

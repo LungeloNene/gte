@@ -1,0 +1,53 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+// Colour branding
+$brand-primary:            #fa8f3d;
+$brand-secondary:       #fa8f3d;
+$brand-tertiary:             #eceeef;
+$brand-charcoal:          #231f20;
+$brand-charcoal-light: #eceeef;
+$brand-darker:              #333333;
+$brand-lighter:              #c6e3f4;
+$font-general:               #111111;
+
+
+// Navigation properties
+$navigation-height:   70px;
+$jumplinks-height:   42px;
+$navigation-drop-down-position: $navigation-height - 2px;
+
+// Device sizes
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 480px;
+
+// Grid Sizes
+$content-grid: 1140px;
+
+// Global Elements
+$box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+$text-shadow:1px 1px 3px rgba(0,0,0,0.5);
+$border: 1px solid gainsboro;
+$border-radius: 1px;
+
+// Footer Elements
+$newsletter-signup--submit: 48px;
+
+// Spacing
+$tiny: 15px;
+$small: 30px;
+$medium: 60px;
+$large: 120px;
+$margin-small: $small;
+$margin-mecium: $medium;
+$margin-large: $large;
+$padding-small: $small;
+$padding-medium: $medium;
+$padding-large: $large;
+
+$col: 570px;
