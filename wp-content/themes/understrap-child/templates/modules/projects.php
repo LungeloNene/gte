@@ -17,7 +17,7 @@
 
 
             ?>
-            <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
+            <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated mb-5">
                     <div class="blog-entry align-self-stretch">
                     <a class="block-20" style="background-image: url('<?php echo $image; ?>');">
                     </a>

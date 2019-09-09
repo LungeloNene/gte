@@ -9887,6 +9887,7 @@ html {
     border: 2px solid #F8F9FB !important;
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
     margin: auto; }
   .staff .info {
     width: calc(100% - 110px);

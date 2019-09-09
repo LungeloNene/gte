@@ -24,7 +24,7 @@
       $lastposts = get_posts($args);
       if ( $lastposts ) {
           foreach ( $lastposts as $post ) : setup_postdata( $post ); $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); $author = get_the_author();?>
-    <div class="col-md-3 ftco-animate fadeInUp ftco-animated event">
+    <div class="col-md-3 ftco-animate fadeInUp ftco-animated event mb-5">
       <div class="blog-entry align-self-stretch">
           <a href="<?php echo get_permalink() ?>" class="block-20" style="background-image:url('<?php echo $featured_img_url;?>'), url('/wp-content/themes/understrap-child/img/twc_school.png')">
               </a>
