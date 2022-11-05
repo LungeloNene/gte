@@ -29,7 +29,7 @@
     "del": "^3.0.0",
     "eslint": "^4.16.0",
     "font-awesome": "^4.7.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-clean-css": "^3.9.1",
     "gulp-clone": "^1.0.0",
     "gulp-concat": "^2.6.1",
@@ -49,7 +49,7 @@
     "npm": "^6.5.0",
     "popper.js": "^1.12.9",
     "run-sequence": "^2.2.0",
-    "understrap": "^0.7.0",
+    "understrap": "^1.0.1",
     "undescores-for-npm": "^1.0.0"
   }
 }
